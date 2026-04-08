@@ -1,0 +1,143 @@
+
+> opencode-orchestrator-cli@0.1.0 vibecoder /Users/hugo/V3ibecoder/opencode-orchestrator-cli
+> tsx packages/cli/src/bin.ts -- run 'Vytvoř jednu samostatnou českou HTML stránku o Praze s výrazným hero blokem, moderním layoutem sekcí, kartami pro 3 obsahové bloky (památky, atmosféra a kultura, proč Prahu navštívit), krátkým úvodem a stručným shrnutím. Nepoužívej placeholder text. Použij lokální obrázky z assets/images a vlož je do výsledného HTML s alt texty.' --provider mock --workspace sandbox-praha-v0-real --design-enhanced --no-update-existing-project
+
+planning...
+[planner] Mock model: gpt-5.4-mini
+[planner] tasks: - Další krok je provést implementaci ve workspace. | Echo prompt: Role: planner | Task: Vytvoř jednu samostatnou českou HTML stránku o Praze s výrazným hero blokem, moderním layoutem sekcí, kartami pro 3 obsahové bloky (památky, atmosféra a kultura, proč Prahu navštívit), krátkým úvodem a stručným shrnutím.
+architecture...
+[architect] Mock model: gpt-5.4-mini
+[architect] tasks: - Další krok je provést implementaci ve workspace. | Echo prompt: Role: architect | Task: Vytvoř jednu samostatnou českou HTML stránku o Praze s výrazným hero blokem, moderním layoutem sekcí, kartami pro 3 obsahové bloky (památky, atmosféra a kultura, proč Prahu navštívit), krátkým úvodem a stručným shrnutí
+building...
+[builder] Mock model: gpt-5.4-mini
+[builder] tasks: - Další krok je provést implementaci ve workspace. | Echo prompt: Role: builder | Task: Vytvoř jednu samostatnou českou HTML stránku o Praze s výrazným hero blokem, moderním layoutem sekcí, kartami pro 3 obsahové bloky (památky, atmosféra a kultura, proč Prahu navštívit), krátkým úvodem a stručným shrnutím.
+building (artifact generation)...
+[builder] Mock model: gpt-5.4-mini
+[builder] tasks: - Další krok je provést implementaci ve workspace. | Echo prompt: Role: builder | Task: Vytvoř jednu samostatnou českou HTML stránku o Praze s výrazným hero blokem, moderním layoutem sekcí, kartami pro 3 obsahové bloky (památky, atmosféra a kultura, proč Prahu navštívit), krátkým úvodem a stručným shrnutím.
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html
+review...
+[reviewer] Mock model: gpt-5.4
+[reviewer] tasks: - Další krok je provést implementaci ve workspace. | Echo prompt: Role: reviewer | Task: Vytvoř jednu samostatnou českou HTML stránku o Praze s výrazným hero blokem, moderním layoutem sekcí, kartami pro 3 obsahové bloky (památky, atmosféra a kultura, proč Prahu navštívit), krátkým úvodem a stručným shrnutím
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/VIBECODER_PLAN.md
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/ARCHITECTURE.md
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMPLEMENTATION_TODO.md
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PROJECT_SUMMARY.md
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PITCH.md
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/DEMO_WALKTHROUGH.md
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/SOURCE_AUDIT.md
+artifact written: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMAGE_PLAN.md
+
+=== Mode Framing ===
+Mode: Pipeline Demo Mode
+
+=== Workspace ===
+Path: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real
+Looks like project: no
+Key files: none
+Task type: landing-page
+Design mode: v0-style
+Design provider mode: v0-real
+Design provider note: Real v0 enhancement applied.
+Local images discovered: 2
+Local images inserted: 1
+
+=== Execution Plan ===
+- step-1 [planner] - Další krok je provést implementaci ve workspace.
+- step-2 [architect] Echo prompt: Role: planner
+- step-3 [builder] Task: Vytvoř jednu samostatnou českou HTML stránku o Praze s výrazným hero blokem, moderním layoutem sekcí, kartami pro 3 obsahové bloky (památky, atmosféra a kultura, proč Prahu navštívit), krátkým úvodem a stručným shrnutím.
+
+=== Phase Reports ===
+- structure-content
+  Created: 9
+  Modified: 0
+  Removed: 0
+  Manifest changes: none
+  Navigation changes: none
+  Publish result: not-run
+  - Builder artifacts: 1
+  - Planning artifacts: 0
+  - Design mode: v0-style
+  - Design provider mode: v0-real
+  - Design provider note: Real v0 enhancement applied.
+  - Local images discovered: 2
+  - Local images inserted into HTML: 1
+- cleanup
+  Created: 0
+  Modified: 0
+  Removed: 0
+  Manifest changes: none
+  Navigation changes: none
+  Publish result: not-run
+  - No cleanup exclusions were needed for the public publish set.
+- publish-preview
+  Created: 0
+  Modified: 0
+  Removed: 0
+  Manifest changes: none
+  Navigation changes: none
+  Publish target: /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real
+  Publish result: not-run
+  - Publish preview could not derive a filtered manifest.
+
+=== Agent Outputs ===
+Planner: Mock model: gpt-5.4-mini
+Architect: Mock model: gpt-5.4-mini
+Builder: Mock model: gpt-5.4-mini | Fallback direct HTML artifact generated.
+Reviewer: Mock model: gpt-5.4
+
+=== File Writes ===
+Planned: 11
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html (Final HTML artifact generated from direct builder fallback)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html (v0 real design enhancement)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html (Ensure local image placement)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/VIBECODER_PLAN.md (Execution summary)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/ARCHITECTURE.md (Architecture summary)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMPLEMENTATION_TODO.md (Next implementation checklist)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PROJECT_SUMMARY.md (Delivery pack project summary)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PITCH.md (Delivery pack pitch narrative)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/DEMO_WALKTHROUGH.md (Delivery pack demo walkthrough)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/SOURCE_AUDIT.md (Delivery pack source trust audit)
+- [planned] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMAGE_PLAN.md (Image placement and availability plan)
+Written: 11
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html (Enhanced by real v0)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html (Inserted local image section)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/VIBECODER_PLAN.md (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/ARCHITECTURE.md (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMPLEMENTATION_TODO.md (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PROJECT_SUMMARY.md (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PITCH.md (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/DEMO_WALKTHROUGH.md (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/SOURCE_AUDIT.md (Created)
+- [written] /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMAGE_PLAN.md (Created)
+Skipped: 0
+Final artifacts:
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html
+
+=== Written Artifact Paths ===
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/praze-s-vyraznym-hero-blokem-info-page.html
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/VIBECODER_PLAN.md
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/ARCHITECTURE.md
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMPLEMENTATION_TODO.md
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PROJECT_SUMMARY.md
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/PITCH.md
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/DEMO_WALKTHROUGH.md
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/SOURCE_AUDIT.md
+- /Users/hugo/V3ibecoder/opencode-orchestrator-cli/sandbox-praha-v0-real/IMAGE_PLAN.md
+
+=== Provider ===
+mock
+
+=== Model Output ===
+Planner: Mock model: gpt-5.4-mini
+Architect: Mock model: gpt-5.4-mini
+Builder: Mock model: gpt-5.4-mini | Fallback direct HTML artifact generated.
+Reviewer: Mock model: gpt-5.4
+
+=== Role Model Routing ===
+- research: requested=minimax-m2.5-free, resolved=none, calls=0, fallbacks=0
+- build: requested=gpt-5.4-mini, resolved=gpt-5.4-mini, calls=5, fallbacks=0
+- review: requested=gpt-5.4, resolved=gpt-5.4, calls=1, fallbacks=0
+
