@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praha - Zlaté Město Uprostřed Evropy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            border: "hsl(214.3 31.8% 91.4%)",
+            background: "hsl(0 0% 100%)",
+            foreground: "hsl(222.2 84% 4.9%)",
+            primary: {
+              DEFAULT: "hsl(221.2 83.2% 53.3%)",
+              foreground: "hsl(210 40% 98%)",
+            },
+            secondary: {
+              DEFAULT: "hsl(210 40% 96.1%)",
+              foreground: "hsl(222.2 47.4% 11.2%)",
+            },
+            muted: {
+              DEFAULT: "hsl(210 40% 96.1%)",
+              foreground: "hsl(215.4 16.3% 46.9%)",
+            },
+            accent: {
+              DEFAULT: "hsl(210 40% 96.1%)",
+              foreground: "hsl(222.2 47.4% 11.2%)",
+            },
+          },
+          fontFamily: {
+            sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @layer base {
+      * {
+        @apply border-border;
+      }
+      body {
+        @apply bg-background text-foreground;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- Hero Section -->
+  <section class="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+    <div class="absolute inset-0 bg-black/40 z-10"></div>
+    <img 
+      src="assets/images/prague-hero.jpg" 
+      alt="Panoramatický pohled na Prahu s Pražským hradem a Vltavou" 
+      class="absolute inset-0 w-full h-full object-cover"
+      onerror="this.style.display='none'"
+    />
+    <div class="relative z-20 text-center px-4 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl leading-tight">
+        Praha
+      </h1>
+      <p class="text-xl md:text-3xl text-white/95 mb-8 drop-shadow-lg font-light leading-relaxed max-w-3xl mx-auto">
+        Zlaté město uprostřed Evropy, kde se setkává tisíciletá historie s moderním životem
+      </p>
+      <a href="#uvod" class="inline-block bg-white text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-all shadow-xl hover:shadow-2xl hover:scale-105">
+        Objevte Prahu
+      </a>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section id="uvod" class="py-16 md:py-24 bg-background">
+    <div class="max-w-4xl mx-auto px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          Město tisíce věží
+        </h2>
+        <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+      </div>
+      <p class="text-lg md:text-xl text-muted-foreground leading-relaxed text-balance">
+        Praha, hlavní město České republiky, je jedním z nejkrásnějších měst Evropy. S více než 1200letou historií nabízí návštěvníkům jedinečnou kombinaci středověké architektury, barokních paláců, gotických kostelů a moderního městského života. Historické centrum Prahy bylo v roce 1992 zařazeno na seznam světového dědictví UNESCO.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Cards -->
+  <section class="py-16 md:py-24 bg-secondary/30">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Památky -->
+        <article class="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-border">
+          <div class="h-64 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200">
+            <img 
+              src="assets/images/prague-monuments.jpg" 
+              alt="Pražský hrad a Karlův most" 
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-foreground mb-4 leading-tight">
+              Architektonické skvosty
+            </h3>
+            <p class="text-muted-foreground leading-relaxed mb-4">
+              Pražský hrad, nejrozlehlejší starověká pevnost na světě, dominuje panoramatu města již více než tisíc let. Karlův most, postavený ve 14. století, je zdoben třiceti barokními sochami a spojuje Staré Město s Malou Stranou.
+            </p>
+            <p class="text-muted-foreground leading-relaxed">
+              Staroměstské náměstí s orlojem z 15. století, Chrám svatého Víta s gotickými věžemi nebo Židovské město s nejstarší fungující synagogou v Evropě - každá památka vypráví fascinující příběh.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Atmosféra a kultura -->
+        <article class="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-border">
+          <div class="h-64 overflow-hidden bg-gradient-to-br from-purple-100 to-purple-200">
+            <img 
+              src="assets/images/prague-culture.jpg" 
+              alt="Staroměstské náměstí s pulzujícím městským životem" 
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-foreground mb-4 leading-tight">
+              Atmosféra a kultura
+            </h3>
+            <p class="text-muted-foreground leading-relaxed mb-4">
+              Praha je městem hudby, umění a literatury. Narodili se zde slavní skladatelé jako Dvořák a Smetana, inspirovala Franze Kafku i Milana Kunderu. Národní divadlo, Rudolfinum a desítky galerií nabízejí kulturní zážitky světové úrovně.
+            </p>
+            <p class="text-muted-foreground leading-relaxed">
+              Městská atmosféra je jedinečná - romantické uličky Malé Strany, živé náměstí Václavské, klidné zahrady pod Petřínem nebo kavárny ve stylu Art Nouveau vytvářejí nezapomenutelnou atmosféru.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3: Proč navštívit -->
+        <article class="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-border">
+          <div class="h-64 overflow-hidden bg-gradient-to-br from-amber-100 to-amber-200">
+            <img 
+              src="assets/images/prague-visit.jpg" 
+              alt="Výhled na Prahu při západu slunce" 
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-foreground mb-4 leading-tight">
+              Proč navštívit Prahu
+            </h3>
+            <p class="text-muted-foreground leading-relaxed mb-4">
+              Praha nabízí návštěvníkům výjimečný poměr ceny a kvality. Oproti jiným evropským metropolím je zde ubytování, stravování i zábava dostupnější. Výborná dopravní dostupnost ze všech koutů Evropy činí z Prahy ideální cíl pro prodloužené víkendy.
+            </p>
+            <p class="text-muted-foreground leading-relaxed">
+              Bezpečné město s vynikající veřejnou dopravou, světoznámou gastronomií (včetně proslavené české kuchyně a piva), bohatým nočním životem a množstvím kulturních akcí během celého roku. Praha prostě okouzlí každého návštěvníka.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section class="py-16 md:py-24 bg-gradient-to-b from-blue-50 to-background">
+    <div class="max-w-4xl mx-auto px-4 md:px-6">
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-border">
+        <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
+          Nezapomenutelný zážitek
+        </h2>
+        <p class="text-lg md:text-xl text-muted-foreground leading-relaxed text-balance text-center mb-6">
+          Praha je místem, kde se historické dědictví harmonicky prolíná s moderním evropským životem. Ať už hledáte kulturní zážitky, architektonické skvosty, gastronomické dobrodružství nebo prostě chcete zažít atmosféru jednoho z nejkrásnějších měst světa, Praha vás nezklame.
+        </p>
+        <p class="text-base text-muted-foreground text-center italic">
+          Město, které si získá vaše srdce a bude vás lákat k opakovaným návštěvám.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-foreground text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 text-center">
+      <p class="text-sm text-white/70">
+        © 2024 Praha - Zlaté město. Všechna práva vyhrazena.
+      </p>
+    </div>
+  </footer>
+
+<section id="image-highlight" class="image-highlight">
+  <h2>Galerie</h2>
+  <figure>
+    <img src="assets/images/praha-detail.png" alt="Praha detail" loading="lazy" decoding="async" />
+    <figcaption>Praha detail</figcaption>
+  </figure>
+</section>
+</body>
+</html>
